@@ -98,7 +98,7 @@ class _HorizontalCalendarState extends State<HorizontalCalendar> {
   @override
   void initState() {
     super.initState();
-    allDates.addAll(getDateList(widget.firstDate, widget.lastDate));
+    allDates.addAll(getDateList(widget.firstDate, widget.lastDate).reversed);
     selectedDates.addAll(widget.initialSelectedDates.map((toDateMonthYear)));
   }
 
