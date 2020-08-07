@@ -67,7 +67,7 @@ class DateWidget extends StatelessWidget {
         ? selectedWeekDayTextStyle ?? weekDayTextStyle ?? subTitleStyle
         : weekDayTextStyle ?? subTitleStyle;
 
-    return GestureDetector(
+    return InkWell(
       onTap: isDisabled ? null : onTap,
       onLongPress: isDisabled ? null : onLongTap,
       child: Container(
